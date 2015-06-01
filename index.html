@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="jsQuiz">
+<head>
+	<title>Javascript Quiz</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="angular.min.js"></script>
+</head>
+<body>
+<div class="container" ng-controller="questionsCon">
+	<nav class="navbar navbar-default">
+		<div class="navbar-brand">JavaScript Quiz</div>
+        <div class="navbar-form form-group" ng-click="show=!show" ng-show="show">
+            <a href="#/start"><div class="btn btn-primary btn-group btn-group-lg">Start Quiz</div></a>
+        </div>
+	</nav>
+	<div ng-view>
+    </div>
+</div>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="angular-route.min.js"></script>
+</body>
+</html>

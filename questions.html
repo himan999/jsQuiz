@@ -1,0 +1,17 @@
+<div ng-controller="questionsCon1" class="card">
+    <div ng-repeat="obj in jsQuizQ">
+        <h3>{{obj.ques}}</h3>
+        <div ng-repeat="prod in obj.options track by $index">
+            <div class="btn btn-info" ng-click="setAnswer($event,obj,$index)">
+                <div>{{prod}}</div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="top-buffer">
+        <div class="btn btn-primary" ng-click="showResult()">Done</div>
+        <div class="card">
+            <h2 ng-cloak>Result : {{ result+"/100" }}</h2>
+        </div>
+    </div>
+</div>

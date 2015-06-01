@@ -1,0 +1,16 @@
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.top-buffer { 
+    margin-top:20px; 
+}
+
+.card {
+    margin:0px auto;
+}
+
+.result {
+    margin: 0px auto;
+}
